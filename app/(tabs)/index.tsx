@@ -1,4 +1,5 @@
 import { getValueFor, save } from "@/hooks/useSecureStorage";
+import { Link } from "expo-router";
 import { useState } from "react";
 import { Button, Text, TextInput, View } from "react-native";
 
@@ -9,6 +10,8 @@ export default function Index() {
 
   return (
     <View>
+      <Link href="/login">Go to Login</Link>
+
       {/* <Text>Vault Screen</Text> */}
       <Text>Secure Storage Example</Text>
       <Text>Key:</Text>
